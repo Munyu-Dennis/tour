@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'home/base.html'%} {% block content %}{% load static%}
+<div class="destinations" id="destinations">
+
+    <div class="content-section">
+        <div class="media">
+            <a href="http://127.0.0.1:8000/static/home/Munyu.jpg"><img class="rounded-circle account-img" src="{% static 'Munyu.jpg'%}"></a>
+            <div class="media-body">
+                <h2 class="account-heading"><u>Dennis Munyu</u></h2>
+                <p class="text-secondary"> The founder and Creator of this site got some help from Colorlib templates</p>
+                <p class="text-secondary"> You can reach me through:</p>
+                <p class="text-secondary">
+                    <a class="article-title" href="https://wwww.facebook.com/deno.delphina"><img src="{% static 'facebook.png'%}"> Munyu Dennis </a>
+                </p>
+                <p class="text-secondary">
+                    <a class="article-title" href="https://www.twitter.com/DennisMunyu"><img src="{% static 'twitter.png'%}"> @DennisMunyu</a>
+                </p>
+            </div>
+        </div>
+        <!-- FORM HERE -->
+    </div>
+
+</div>
+{% endblock %}
+
+</html>

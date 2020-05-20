@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'home/base.html' %} {% block content%}{% load static %}
+<div class="destinations" id="destinations">
+    <div class="container">
+     <div class="row destinations_row">
+            <div class="col">
+                <div class="destinations_container item_grid">
+                    
+                     <div class="destination item">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{object.img.url}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ object.name}}</h5>
+                                <p class="card-text"> Ksh {{object.price}}</p>
+                                <a href="#" class="btn btn-primary">Buy This Package</a>
+                            </div>
+                        </div>
+                        </div>
+                    
+                </div>
+               <a class="btn btn-secondary bt-sm mt-1 mb-1" href="{% url 'home' %}">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+</html>
